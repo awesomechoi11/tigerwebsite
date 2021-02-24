@@ -1,0 +1,28 @@
+{
+  "name": "tigerwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd tigerwebsite && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix tigerwebsite",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awesomechoi11/tigerwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awesomechoi11/tigerwebsite/issues"
+  },
+  "homepage": "https://github.com/awesomechoi11/tigerwebsite#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.2"
+  }
+}
